@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Manual de camareros</title>
+</head>
+<body>
+  <main>
+    <aside class="sidebar">
+        <form class="sidebar__form">
+            <input type="checkbox" id="open-nav">
+            <label class="material-symbols-outlined" for="open-nav">menu</label>
+        </form>
+        <picture class="sidebar__logo">
+            <img class="img-logo" src="../img/LOGO.jpg" alt="logo de KING BEER">
+        </picture>
+        <nav class="sidebar__nav">
+            <ul>
+            <li class="sidebar__item">
+                <a href="../home.html">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>INFO</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="camarero.html">
+                    <span class="material-symbols-outlined">edit_note</span>
+                    <span>CAMARERO</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="#">
+                    <span class="material-symbols-outlined">badge</span>
+                    <span>RECEPCIONISTA</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="runner.html">
+                    <span class="material-symbols-outlined">room_service</span>
+                    <span>RUNNER</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="bartender.html">
+                    <span class="material-symbols-outlined">local_bar</span>
+                    <span>BARTENDER</span>
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </aside>
+<section class="faq">
+
+    <h1 class="faq__title">Los 3 pasos de la Recepcion</h1>
+
+  <!-- ITEM 01 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">01</b>
+      Recepción: Dar la bienvenida y captar nuevos clientes.
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__subtitle">RECEPCIÓN Y BIENVENIDA</div>
+
+      <div class="faq__text">
+        <p><b>Objetivo:</b> generar una excelente primera impresión.
+
+El saludo como representante del local debe ser amable, alegre y natural. No es necesario seguir un discurso rígido; lo importante es transmitir buena energía desde el primer contacto.</b>
+</p>
+
+      <div class="faq__subtitle">ATRACCIÓN DE CLIENTES (EXTERIOR)</div>
+      <p><b>Objetivo:</b> captar personas que aún no ingresaron.
+
+Es fundamental estar atentos a quienes se encuentran fuera del local. Muchas veces, una simple bienvenida puede convertir a alguien que está mirando en un cliente.</p>
+</div>
+      <div class="faq__card-footer">
+          <p><b>IMPORTANTE:</b> Mantener siempre contacto visual.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 02 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">02</b>
+      Organización del ingreso
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__subtitle">Cantidad de clientes</div>
+
+      <div class="faq__text">
+        <p>Consultar cuántas personas ingresan para poder asignar correctamente el espacio.</p>
+        </p>
+      </div>
+      <div class="protocolo-container">
+      <table class="protocolo">
+    <thead>
+      <tr>
+        <th>ETAPA</th>
+        <th>SITUACIÓN</th>
+        <th>ACCIÓN DEL RECEPCIONISTA</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2" class="etapa">RESERVA</td>
+        <td>Cliente llega al local</td>
+        <td>Consultar si posee reserva</td>
+      </tr>
+      <tr>
+        <td>Cliente con reserva</td>
+        <td>Verificar nombre y acompañar a su mesa</td>
+      </tr>
+
+      <tr>
+        <td class="etapa">SIN RESERVA</td>
+        <td>Cliente sin reserva</td>
+        <td>Organizar ingreso según disponibilidad</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2" class="etapa">ORGANIZACIÓN</td>
+        <td>Ingreso al salón</td>
+        <td>Consultar cantidad de personas</td>
+      </tr>
+      <tr>
+        <td>Elección de ubicación</td>
+        <td>Preguntar si prefiere interior o exterior</td>
+      </tr>
+
+      <tr>
+        <td class="etapa">UBICACIÓN</td>
+        <td>Asignación de mesa</td>
+        <td>Acompañar al cliente a su lugar</td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+
+    </div>
+    
+  </label>
+
+  <!-- ITEM 03 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">03</b>
+      Gestion del tiempo y flujo del ingreso.
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          La recepción no solo organiza el ingreso de clientes, sino que también regula el ritmo del servicio.
+            <br><br>
+Es fundamental evitar sentar varias mesas al mismo tiempo, ya que esto puede generar demoras y sobrecargar tanto al personal de salón como a la cocina.
+        </p><br><br>
+
+        <ul>
+        <li>Distribuir el ingreso de mesas con algunos minutos de diferencia</li>
+        <li>Observar el estado del salón y la cocina antes de ubicar nuevos clientes</li>
+        <li>Priorizar una atención fluida por sobre la rapidez de ingreso</li>
+        <li>Coordinar con el equipo para evitar saturación</li>
+        </ul>
+        <br><br>
+        <p>El objetivo es mantener un servicio equilibrado, asegurando que cada cliente reciba una buena atención sin generar cuellos de botella.</p>
+
+        <div class="faq__card-footer">
+          <p><b>IMPORTANTE:</b> El rol de recepción es fundamental para el funcionamiento del local. De su correcta ejecución dependen la organización del servicio, la experiencia del cliente y el ritmo de trabajo del equipo.
+
+En King Beer, la experiencia comienza desde la recepción: cada saludo, cada decisión y cada detalle influyen en cómo el cliente vive el lugar.</p>
+</div>
+      </div>
+    </div>
+
+    
+    
+    
+  </label>
+
+</section>
+</main>
+<footer class="footer">
+    <p>King Beer · Manual operativo de servicio</p>
+    <span>La experiencia del cliente comienza en cada detalle</span>
+</footer>
+</body>
+</html>

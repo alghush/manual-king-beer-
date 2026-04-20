@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Manual de camareros</title>
+</head>
+<body>
+  <main>
+    <aside class="sidebar">
+        <form class="sidebar__form">
+            <input type="checkbox" id="open-nav">
+            <label class="material-symbols-outlined" for="open-nav">menu</label>
+        </form>
+        <picture class="sidebar__logo">
+            <img class="img-logo" src="../img/LOGO.jpg" alt="logo de KING BEER">
+        </picture>
+        <nav class="sidebar__nav">
+            <ul>
+            <li class="sidebar__item">
+                <a href="../home.html">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>INFO</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="#">
+                    <span class="material-symbols-outlined">edit_note</span>
+                    <span>CAMARERO</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="recepcionista.html">
+                    <span class="material-symbols-outlined">badge</span>
+                    <span>RECEPCIONISTA</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="runner.html">
+                    <span class="material-symbols-outlined">room_service</span>
+                    <span>RUNNER</span>
+                </a>
+            </li>
+            
+            <li class="sidebar__item">
+                <a href="bartender.html">
+                    <span class="material-symbols-outlined">local_bar</span>
+                    <span>BARTENDER</span>
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </aside>
+
+<section class="faq">
+
+    <h1 class="faq__title">Los 10 pasos del camarero</h1>
+
+  <!-- ITEM 01 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">01</b>
+      Dar la bienvenida al cliente. Presentarse y romper el hielo
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__subtitle">BIENVENIDA AL CLIENTE</div>
+
+      <div class="faq__text">
+        <p>Tu saludo como representante del local debe ser amable, alegre, neutral y desestructurado.Si bien no hay solo "speech" de saludo (¡Hola! ¿Como estan? bienvenido a...), lo importante es crear una excelente impresión al Cliente desde el primer momento del contacto </p>
+      </div>
+
+      <div class="faq__card">
+        <div class="faq__card-header">TIPS DE BIENVENIDA</div>
+
+        <div class="faq__card-body">
+          <ol class="faq__list">
+             <li>Dar la bienvenida al 100% de los clientes.</li>
+                    <li>Detectar clientes nuevos y hacer contacto visual.</li>
+                    <li>Sonreír amablemente.</li>
+                    <li>Identificarte con tu nombre para que el cliente sepa quién es responsable del servicio.</li>
+          </ol>
+        </div>
+
+        <div class="faq__card-footer">
+          <p><b>IMPORTANTE:</b> Mantener siempre contacto visual.</p>
+        </div>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 02 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">02</b>
+      Realizar la venta:siempre sugerir nuestros productos y promociones
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__subtitle">OFRECER EL PRODUCTO</div>
+
+      <div class="faq__text">
+        <p>Al momento de ofrecer productos al Cliente, primero debes identificar el <b>Tramo Horario</b> en el cual te
+encuentras y <b>conocer en profundidad todas las Cartas (Menú, Promociones, tragos y nuestras cervezas)</b>. También debes estar
+informado de las promociones y de los impulsores de venta que puedes utilizar en ese momento. A
+continuación presentamos situaciones típicas de cada Tramo Horario y te mostramos los caminos de acción
+                esperables.</p>
+        </p>
+      </div>
+
+      <div class="faq__grid">
+
+          <div class="faq__grid-side"><br>CENA</div>
+
+          <div class="faq__grid-header">SITUACIÓN</div>
+          <div class="faq__grid-header">LA CAMARERA OFRECE</div>
+
+          <div class="faq__grid-item">Bebida y promociones.</div>
+          <div class="faq__grid-item">Recomendar algun plato o trago, cerveza dependiendo el cliente</div>
+
+          <div class="faq__grid-item">Momento de retirar los platos.</div>
+          <div class="faq__grid-item">Postre, tragos o cerveza de la casa.</div>
+
+        </div>
+      
+      <div class="faq__subtitle">CONSIDERACION IMPORTANTES PARA LA TOMA DEL PEDIDO</div>
+
+      <ul class="faq__list">
+        <ul class="lista__pasos">
+                    <li><b>REALIZAR LA DOBLE VERIFICACIÓN DEL PEDIDO</b>:Es importante asegurarte de haber anotado correctamente lo que el Cliente solicitó, repitiendo la información recibida para que el mismo te confirme el pedido. En caso que tengas alguna duda, deberás solicitarle al Cliente que reitere su pedido y luego repetirlo para confirmarlo.</li>
+                    <li><b>PREFERENCIAS DEL CLIENTE</b>:Debes conocer en profundidad cada producto de la Carta e interpretar
+                    todas las preferencias o inquietudes que el Cliente solicite sobre lo que va a consumir. Por ejemplo, si
+                    un Cliente pide una carne roja, deberás preguntar en qué punto de cocción la prefiere. La misma
+                    situación puede darse en una gran cantidad de productos. Nunca debes olvidar registrar esas
+                    prefencias en la Comanda. Si el Cliente pide un producto que no está en Carta, antes de darle una
+                    respuesta debes consultar con el Encargado.</li>
+                    <li><b>INFORMAR TIEMPO DE DEMORA</b>:Para evitar inconvenientes, debes informar al Cliente el tiempo de
+                    demora, principlamente si se trata de un producto de elaboración prolongada. Cuando el Cliente pide
+                    un producto de este tipo, <b>siempre debes ofrecer una Entrada y/o Aperitivo</b>, de esta manera
+                    disminuyes el tiempo de demora percibido por el Cliente, e incrementas la venta por cubierto.</li>
+                    <li><b>RECORDAR TU NOMBRE</b>:Una vez finalizada la toma del pedido, si no lo hiciste antes, informá tu
+                    nombre al Cliente. Por ejemplo: “Mi nombre es Paula, por cualquier cosa que necesiten no duden en
+                    llamarme”.</li>
+    </div>
+  </label>
+
+  <!-- ITEM 03 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">03</b>
+      Inmediatamente después de tomar el pedido preparar la mesa con los elementos correspondientes
+    </div>
+  </label>
+
+  <!-- ITEM 04 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">04</b>
+      Descargar el pedido en la mesa junto con el runner, siempre respetando los procedimientos.
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          Seguir los procedimientos y coordinar correctamente con el equipo.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 05 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">05</b>
+        Preguntar al Cliente si su pedido esta bien unos minutos después de haberle servido
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          <b>Para que nos sirve pregunta</b><br>para solucionar cualquier inconveniente o saciar la necesidad del cliente <br><br><b>Preguntas claves</b><br>.Una vez que se descargó el pedido en la mesa deberás esperar unos segundos e inmediatamente acercarte
+para preguntar a los Clientes: “¿Está todo bien, necesitan algo más?”. Hemos comprobado que muchas de las
+necesidades de los Clientes durante el servicio, se dan una vez que el pedido llegó a su mesa.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 06 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">06</b>
+      Recorrer constantemente el sector
+    </div>
+
+    <div class="faq__content">
+        <div class="faq__text">
+        <p>
+            <b>RECORIDO DEL SECTOR</b>.Es muy importante que recorras tu sector y permanezcas siempre cerca de las mesas, observándolas, para poder anticiparte a las necesidades<br><br>
+                <b>OBSERVACION</b>.Este punto trata de crear el hábito de estar siempre observando tu sector. En este caso resaltamos dos aspectos importantes:los <b>gestos del Cliente</b>, en los cuales puede detectarse un pedido, y los <b>detalles de la mesa</b> donde tambien puede detectarse algun faltante. Además es importante detectar el momento necesario para preguntar sobre la atención y poder ofrecer algún tipo de producto nuevo. <br><br>
+                <b>CAPACIDAD DE RESPUESTA</b>. En este punto destacamos la importancia de que operes velozmente ante un requerimiento del Cliente. <br> Ser rapido/a tener la capacidad de respuesta es estar siempre atento/a cuando el Cliente realiza un gesto para pedir algo, incliso adelantarte y preguntar"¿Puedo  ayudarte en algo?" Eso provoca una excelente impresión de eficiencia, compromiso y Servicio al Cliente.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 07 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">07</b>
+      Realizar la venta de la segunda bebida
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          <b>OFRECER PRODUCTOS</b>. <b>Si detectás que el Cliente terminó de consumir un producto, deberás presentarte
+inmediatamente en la mesa y ofrecerle otro</b>. Por ejemplo: Si el Cliente está por terminar de tomar un
+Happy Hour y aún falta la segunda bebida, debes acudir a ofrecerla rápidamente. Una de las claves para
+ofrecer bebida es hacerlo inmediatamente, cuando el Cliente bajó la copa, o incluso antes. <b>Se a
+comprobado que si la Camarera/o ofrece repetir la bebida, las probabilidades de que el Cliente acepte son
+más altas que esperando que el Cliente lo haga</b>. Es fundamental ser oportunos y llegar en el momento
+indicado. Debes ofrecer la reposición de la bebida en el momento de servir el último contenido de la
+botella, de forma que el Cliente nunca deje de tener su bebida en la mesa. De esta manera también le
+permitirás al Runner entregar su bebida a tiempo.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 08 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">08</b>
+      Realizar la venta de postres, tragos o cerveza retirar vajilla sucia
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          Una vez que el Cliente finaliza su comida, debes acercarte a la mesa, consultar si todo estuvo en orden y preguntar si deseas retirar la vajilla. En caso de que haya comida sin consumir, debes ofrecer la opción de llevarla. Mientras se retira la vajilla, ofrecer la carta de postres, tragos o cervezas. En este momento es fundamental sugerir opciones y, en caso de ser necesario, recomendar productos para incentivar una nueva venta.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 09 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">09</b>
+      Retirar la vajilla sucia, junto al runner y limpiar la mesa.
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          Una vez que el Cliente finaliza el postre o la última consumición, debes acercarte a la mesa, verificar que todo haya sido de su agrado y proceder a retirar la vajilla sucia junto al runner. Es importante dejar la mesa limpia y ordenada, preparándola para el cierre del servicio.
+        </p>
+      </div>
+    </div>
+  </label>
+
+  <!-- ITEM 10 -->
+  <label class="faq__item">
+    <input class="faq__input" type="checkbox">
+
+    <div class="faq__question">
+      <b class="faq__number">10</b>
+      Emitir ticket,cobrar al cliente y despedirse cordialmente, invitandolo a volver.
+    </div>
+
+    <div class="faq__content">
+      <div class="faq__text">
+        <p>
+          <b>DESPEDIDA</b>Una vez realizado el cobro, debes despedir a tus Clientes. Es importante que los saludes de manera amable y
+simpática y les agradezcas por habernos elegido. <b>No olvides de mantener el contacto visual y recuerda que el
+servicio no termina cuando el Cliente pide la cuenta, sino una vez que se retira</b>.
+        </p>
+      </div>
+    </div>
+  </label>
+</section>
+</main>
+
+<footer class="footer">
+    <p>King Beer · Manual operativo de servicio</p>
+    <span>La experiencia del cliente comienza en cada detalle</span>
+</footer>
+</body>
+</html>
