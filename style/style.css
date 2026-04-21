@@ -543,6 +543,7 @@ video {
     .faq__question {
         font-size: 0.9rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -580,6 +581,15 @@ video {
     overflow-x: auto;
 }
 
+    .main-content {
+        margin-left: 0;
+        padding: 0 15px;
+}
+
+    .main-logo {
+        width: 180px;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -604,5 +614,9 @@ video {
 
     .faq__text {
         font-size: 0.85rem;
+    }
+
+    .main-logo {
+        width: 140px;
     }
 }
