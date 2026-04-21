@@ -598,6 +598,11 @@ video {
     .main-logo {
         width: 180px;
     }
+
+    .footer {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 
@@ -638,5 +643,10 @@ video {
     padding: 0 15px;
     padding-top: 5rem;
     align-items: center;
+}
+
+.footer {
+        margin-left: 0;
+        width: 100%;
 }
 }
