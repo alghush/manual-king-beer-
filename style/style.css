@@ -170,7 +170,7 @@ input[type="checkbox"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2; /* Atrás de todo */
+    z-index: -2;
 }
 
 /* Filtro oscuro para que el texto se lea siempre */
@@ -180,8 +180,8 @@ input[type="checkbox"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Oscurece el video */
-    z-index: -1; /* Entre el video y el texto */
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 /* Contenedor del contenido */
@@ -206,7 +206,6 @@ input[type="checkbox"] {
     margin-bottom: 20px;
 }
 
-/* Sección de tarjetas con fondo transparente para ver el video */
 .cards-container {
     padding: 100px 20px;
 }
@@ -250,7 +249,7 @@ input[type="checkbox"] {
 
 .glass_bcg {
     filter: blur(8px) brightness(0.6);
-    transform: scale(1.05); /* evita bordes raros al hacer blur */
+    transform: scale(1.05);
 }
 
 .video-background {
@@ -271,6 +270,10 @@ input[type="checkbox"] {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: -1;
+}
+
+video {
+    object-fit: cover;
 }
 
 
