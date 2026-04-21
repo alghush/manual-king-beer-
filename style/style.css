@@ -1,6 +1,6 @@
 /* VARIABLES DE COLOR */
 :root {
-    --color-bg: #0b1120;
+    --color-bg: #252525;
     --color-surface: #111827;
     --color-surface-hover: #1f2937;
     --color-text: #f3f4f6;
@@ -161,6 +161,118 @@ input[type="checkbox"] {
     display: inline;
 }
 
+/*---- HOME -----*/
+/* Video de fondo FIJO */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; /* Atrás de todo */
+}
+
+/* Filtro oscuro para que el texto se lea siempre */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Oscurece el video */
+    z-index: -1; /* Entre el video y el texto */
+}
+
+/* Contenedor del contenido */
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+/* Primera vista (Logo y Título) */
+.hero-full {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Sección de tarjetas con fondo transparente para ver el video */
+.cards-container {
+    padding: 100px 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: rrepeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);/* Fondo semi-transparente */
+    backdrop-filter: blur(10px);
+    padding:25px 15px;;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #d4af37;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #d4af37;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.card:hover i {
+    color: black;
+}
+
+/* VIDEO DE FONDO CONFIGURACIÓN */
+
+.glass_bcg {
+    filter: blur(8px) brightness(0.6);
+    transform: scale(1.05); /* evita bordes raros al hacer blur */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
 
 /* CONTENEDOR */
 .faq {
@@ -306,10 +418,18 @@ input[type="checkbox"] {
     font-size: 0.85rem;
 }
 
+.main-content {
+    margin-left:5rem; 
+    display: flex;
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* GRID */
 .faq__grid {
     display: grid;
-    grid-template-columns: 150px 1fr 1fr; /* 👈 3 columnas */
+    grid-template-columns: 150px 1fr 1fr;
     margin: 15px 0;
     border: 1px solid var(--color-border);
     border-radius: 10px;
@@ -317,7 +437,7 @@ input[type="checkbox"] {
 
 /* COLUMNA ROJA */
 .faq__grid-side {
-    grid-row: 1 / span 3; /* ocupa varias filas */
+    grid-row: 1 / span 3;
     background: linear-gradient(to bottom, #dc2626, #b91c1c);
     color: white;
     font-weight: 700;
@@ -389,12 +509,15 @@ input[type="checkbox"] {
 
 .footer {
     justify-content: flex-end;
-    margin-left: 90px;
     padding: 30px 20px;
     text-align: center;
     color: var(--color-text);
     border-top: 1px solid var(--color-border);
     opacity: 0.8;
+}
+
+.main-content + .footer {
+    margin-left: 90px;
 }
 
 .footer p {
@@ -430,7 +553,6 @@ input[type="checkbox"] {
         width: 200px;
     }
 
-    /* CONTENIDO NO SE ROMPE CON SIDEBAR */
     .faq {
         margin-left: 90px;
         padding: 15px;
@@ -441,7 +563,6 @@ input[type="checkbox"] {
         padding-bottom: 1rem ;
     }
 
-    /* TEXTO MÁS LEGIBLE */
     .faq__text {
         font-size: 0.9rem;
     }
@@ -455,6 +576,7 @@ input[type="checkbox"] {
     grid-template-columns: 120px 1fr 1fr;
     overflow-x: auto;
 }
+
 }
 
 @media (max-width: 480px) {

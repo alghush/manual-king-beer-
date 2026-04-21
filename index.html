@@ -12,54 +12,58 @@
     <title>HOME</title>
 </head>
 <body>
-    <aside class="sidebar">
-        <form class="sidebar__form">
-            <input type="checkbox" id="open-nav">
-            <label class="material-symbols-outlined" for="open-nav">menu</label>
-        </form>
-        <picture class="sidebar__logo">
-            <img class="img-logo" src="../img/LOGO.jpg" alt="logo de KING BEER">
-        </picture>
-        <nav class="sidebar__nav">
-            <ul>
-            <li class="sidebar__item">
-                <a href="#">
-                    <span class="material-symbols-outlined">info</span>
-                    <span>INFO</span>
-                </a>
-            </li>
+<!-- El video que queda de fondo para siempre -->
+<video autoplay muted loop playsinline class="video-background">
+    <source src="video/presentacion.mp4" type="video/mp4">
+</video>
+
+<!-- Capa oscura fija para que el texto sea legible sobre el video -->
+<div class="video-overlay"></div>
+
+<!-- Todo el contenido de la página va acá arriba -->
+<main class="content-wrapper">
+    
+    <!-- Sección de Bienvenida (Logo) -->
+    <section class="hero-full">
+        <img src="img/logo inicio.png" alt="Logo King Beer" class="main-logo">
+        <h1>Manual de Operaciones</h1>
+        <p>Experiencia King Beer</p>
+        <div class="scroll-arrow">↓</div>
+    </section>
+
+    <!-- Sección de Tarjetas (Cards) -->
+    <section id="home" class="cards-container">
+        <h2>Acceso Rápido</h2>
+        <div class="cards-grid">
+            <a href="/pag/camarero.html" class="card">
+                <i class="fas fa-utensils"></i>
+                <h3>Servicio</h3>
+                <p>Pasos de atención y estándares de calidad.</p>
+            </a>
+
+            <a href="/pag/recepcionista.html" class="card">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Recepción</h3>
+                <p>Protocolos de bienvenida y gestión de mesas.</p>
+            </a>
             
-            <li class="sidebar__item">
-                <a href="/pag/camarero.html">
-                    <span class="material-symbols-outlined">edit_note</span>
-                    <span>CAMARERO</span>
-                </a>
-            </li>
-            
-            <li class="sidebar__item">
-                <a href="/pag/recepcionista.html">
-                    <span class="material-symbols-outlined">badge</span>
-                    <span>RECEPCIONISTA</span>
-                </a>
-            </li>
-            
-            <li class="sidebar__item">
-                <a href="/pag/runner.html">
-                    <span class="material-symbols-outlined">room_service</span>
-                    <span>RUNNER</span>
-                </a>
-            </li>
-            
-            <li class="sidebar__item">
-                <a href="/pag/bartender.html">
-                    <span class="material-symbols-outlined">local_bar</span>
-                    <span>BARTENDER</span>
-                </a>
-            </li>
-            </ul>
-        </nav>
-    </aside>
-<footer class="footer">
+            <a href="pag/runner.html" class="card">
+                <i class="fas fa-beer"></i>
+                <h3>Barra</h3>
+                <p>proximamente</p>
+            </a>
+
+            <a href="/pag/bartender.html" class="card">
+                <i class="fas fa-beer"></i>
+                <h3>Barra</h3>
+                <p>proximamente</p>
+            </a>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer footer_index">
     <p>King Beer · Manual operativo de servicio</p>
     <span>La experiencia del cliente comienza en cada detalle</span>
 </footer>
