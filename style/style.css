@@ -472,12 +472,17 @@ video {
 }
 
 /*RECEPCIONISTA*/
+.protocolo-container{
+    width: 100%;
+    overflow-x:auto ;
+}
+
 .protocolo {
     width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
     margin: 20px 0;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 /* columna ETAPA */
