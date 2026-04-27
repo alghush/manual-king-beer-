@@ -471,6 +471,132 @@ video {
     border-radius:5px 5px 5px 5px;
 }
 
+/*--- SECTION CHECKLIST ----*/
+
+.checklist-section {
+    max-width:750px;
+    margin: 40px auto;
+    padding: 20px;
+
+    background: var(--color-dark); 
+    backdrop-filter: blur(8px);
+
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+
+    box-shadow: 
+        0 10px 25px #c9a40089,
+        0 0 8px #0618bbdd;
+}
+
+.checklist-section h2 {
+    background: linear-gradient(to right, var(--color-primary), var(--color-gold-dark));
+    color:var(--color-text) ;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.checklist__desc {
+    background: var(--color-surface);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.checklist__list {
+    width: 100%;
+    max-width: 700px;
+    list-style: none;
+    padding: 0;
+}
+
+.checklist__list li {
+    background:#b0acac;
+    color: #111;
+    margin:5px 0;
+    border-radius: 5px;
+    position: relative;
+
+    padding: 10px 10px 10px 35px;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--color-border);
+    transition: 0.2s ease;
+}
+
+.checklist__list li::before {
+    content: "✔";
+    position:absolute;
+    left: 10px;
+    color: #00aa36b9;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.checklist__list li:hover {
+    background: #ffffff14;
+    color: var(--color-text);
+    transform: translateX(5px);
+}
+
+.pre-cierre .checklist__desc{
+    background:linear-gradient(to right, #1f9d3a, #5cbf3a);
+}
+
+.cierre {
+    margin-top:40px ;
+}
+
+/*--- MEDIA QUERIES ---*/
+
+@media (max-width: 768px) {
+
+    .checklist-section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .checklist-section h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .checklist__desc {
+        font-size: 0.9rem;
+    }
+
+    .checklist__list li {
+        font-size: 0.85rem;
+        padding: 10px 10px 10px 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .checklist-section {
+        padding: 10px;
+    }
+
+    .checklist-section h2 {
+        font-size: 1rem;
+    }
+
+    .checklist__list li {
+        font-size: 0.8rem;
+        padding: 8px 8px 8px 28px;
+    }
+
+        .checklist__list li::before {
+        font-size: 0.8rem;
+        left: 8px;
+    }
+}
+
 /*RECEPCIONISTA*/
 .protocolo-container{
     width: 100%;
